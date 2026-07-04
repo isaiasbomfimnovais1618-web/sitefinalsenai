@@ -1,0 +1,451 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(rgba(18, 18, 18, 0.85), rgba(18, 18, 18, 0.85)), url('../img/cadeirasinformacao.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    color: #ffffff;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 175px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #212529;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.nav-container {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.fontedelogo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffc107;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.fontedelogo:hover {
+    color: #ffffff;
+}
+
+.menu-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    gap: 15px;
+}
+
+.menu-links a {
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.menu-links a:hover {
+    color: #ffc107;
+}
+
+.nav-buttons {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-custom {
+    flex: 1;
+    max-width: 140px;
+    text-align: center;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.btn-outline {
+    border: 1px solid #f8f9fa;
+    color: #f8f9fa;
+}
+
+.btn-outline:hover {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+.btn-primary-custom {
+    background-color: #ffc107;
+    color: #212529;
+    border: 1px solid #ffc107;
+}
+
+.btn-primary-custom:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+}
+
+.secao-sobre {
+    width: 100%;
+    margin: 30px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.secao-sobre h2 {
+    font-size: 28px;
+    color: #ffc107;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.textotitulo {
+    font-size: 16px;
+    font-weight: 400;
+    color: #f8f9fa;
+    line-height: 1.6;
+}
+
+.section-title-container {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+
+.section-title-container h2 {
+    font-size: 28px;
+    color: #ffc107;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.section-title-container p {
+    color: #cccccc;
+    font-size: 15px;
+}
+
+.secao-servicos, .secao-equipe {
+    width: 100%;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.grid-servicos, .grid-equipe {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+.card-servico, .card-barbeiro {
+    background-color: #212529;
+    border-radius: 8px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.card-servico:hover, .card-barbeiro:hover {
+    transform: translateY(-5px);
+    border-color: #ffc107;
+}
+
+.servico-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.card-servico h3, .card-barbeiro h3 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.card-servico p, .card-barbeiro p {
+    font-size: 14px;
+    color: #cccccc;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.servico-preco {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffc107;
+    background-color: rgba(255, 193, 7, 0.1);
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+.avatar-placeholder {
+    width: 80px;
+    height: 80px;
+    background-color: #ffc107;
+    color: #212529;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 15px auto;
+}
+
+.especialidade {
+    color: #ffc107 !important;
+    font-size: 13px !important;
+    font-weight: 500;
+}
+
+.banner-destaque {
+    width: 100%;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.banner-container {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.banner-img {
+    width: 100%;
+    min-height: 350px;
+    display: block;
+    object-fit: cover;
+}
+
+.banner-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.95) 30%);
+    padding: 20px;
+    max-height: 75%;
+    overflow-y: auto;
+}
+
+.text-warning-custom {
+    color: #ffc107;
+    font-size: 20px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.banner-text {
+    font-size: 14px;
+    color: #e0e0e0;
+    line-height: 1.5;
+}
+
+.main-footer {
+    background-color: #212529; 
+    padding: 25px 0;
+    margin-top: auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+}
+
+.footer-container {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.brand-name {
+    font-weight: bold;
+    color: #ffffff;
+    margin-right: 8px;
+    font-size: 15px;
+}
+
+.brand-name i {
+    margin-right: 4px;
+    color: #ffc107;
+}
+
+.footer-copyright {
+    color: #cccccc;
+    font-size: 13px;
+    display: block;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.phone-number {
+    color: #cccccc;
+}
+
+.phone-number i {
+    margin-right: 4px;
+}
+
+.btn-schedule {
+    color: #ffc107;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.btn-schedule:hover {
+    color: #e0a800;
+}
+
+@media (min-width: 576px) {
+    .grid-servicos, .grid-equipe {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .textotitulo {
+        font-size: 18px;
+    }
+
+    .banner-img {
+        min-height: 400px;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        padding-top: 80px;
+    }
+
+    .nav-container {
+        flex-direction: row; 
+        justify-content: space-between;
+        padding: 15px 30px;
+        gap: 0;
+    }
+
+    .nav-buttons {
+        width: auto;
+    }
+
+    .btn-custom {
+        flex: none;
+        width: auto;
+        padding: 8px 18px;
+    }
+
+    .secao-sobre {
+        margin: 50px auto;
+        max-width: 800px;
+    }
+
+    .secao-servicos, .secao-equipe {
+        margin: 60px auto;
+    }
+
+    .grid-servicos, .grid-equipe {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+
+    .banner-overlay {
+        padding: 30px;
+    }
+
+    .text-warning-custom {
+        font-size: 24px;
+    }
+
+    .footer-container {
+        flex-direction: row; 
+        justify-content: space-between;
+        gap: 0;
+        text-align: left;
+    }
+
+    .footer-copyright {
+        display: inline-block; 
+        margin-left: 10px;
+    }
+
+    .footer-contact {
+        flex-direction: row; 
+        gap: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .nav-container, 
+    .secao-sobre, 
+    .secao-servicos,
+    .secao-equipe,
+    .banner-destaque,
+    .footer-container {
+        max-width: 1200px; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .textotitulo {
+        font-size: 20px;
+        line-height: 1.8;
+    }
+
+    .banner-img {
+        min-height: 450px;
+    }
+
+    .banner-text {
+        font-size: 15px;
+    }
+}
